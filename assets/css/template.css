@@ -32,79 +32,9 @@ html {
   justify-content: center;
   padding: 0px 30px;
 }
-.wrapper {
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.input-group {
+.campo-busca {
   position: relative;
-}
-.input-group .search {
-  height: 15px;
-  width: 15px;
-  cursor: pointer;
-  color: #fff;
-  outline: none;
-  padding: 5px;
-  position: relative;
-  transition: all 150ms cubic-bezier(0.2, 0.6, 0.252, 1.2);
-}
-.input-group .search ~ {
-  height: 4px;
-  width: 15px;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-  position: absolute;
-  display: block;
-  opacity: 1;
-  right: -9px;
-  top: 24px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transition: opacity 150ms ease;
-}
-.input-group .search::-webkit-input-placeholder {
-  color: #fff;
-}
-.input-group .search:-ms-input-placeholder {
-  color: #fff;
-}
-.input-group .search::-ms-input-placeholder {
-  color: #fff;
-}
-.input-group .search::placeholder {
-  color: #fff;
-}
-.input-group .search:focus {
-  height: 25px;
-  width: 200px;
-  border-radius: 3px;
-  color: #26547c;
-  cursor: initial;
-}
-.input-group .search:focus::-webkit-input-placeholder {
-  color: #a1a1a1;
-}
-.input-group .search:focus:-ms-input-placeholder {
-  color: #a1a1a1;
-}
-.input-group .search:focus::-ms-input-placeholder {
-  color: #a1a1a1;
-}
-.input-group .search:focus::placeholder {
-  color: #a1a1a1;
-}
-.input-group .search:focus ~ .bar {
-  box-shadow: none;
-  opacity: 0;
-  right: 0;
-  top: 5px;
+  border-radius: 4px 4px 4px 4px;
 }
 /* *******************FIM BUSCA************************ */
 
@@ -151,18 +81,6 @@ nav a:hover {
   background-color: #faa916;
   color: #fff;
   text-decoration: none;
-}
-
-#menu-icon {
-
-	display: none;
-}
-
-a:hover#menu-icon {
-
-	background-color: #000;
-	border-radius: 4px 4px 0 0;
-
 }
 /* ***************FIM MENU AREA********************* */
 
@@ -588,39 +506,7 @@ article .serv_desc {
   footer .contato {
     padding-bottom:20px;
   }
-  .menuMobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin:auto;
-  }
-	nav ul, nav:active ul { 
 
-		display: block;
-		position: absolute;
-		padding: 20px;
-		background: #000;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-
-	}
-
-	nav li {
-
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-
-	}
-
-  nav ul {
-    flex-direction: column;
-    display: none;
-  }
-  
 }
 @media only screen and (max-width: 450px) {
   .formulario {

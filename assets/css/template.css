@@ -1,0 +1,641 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  background-color: #000;
+  border-top: 1px solid #2c2c2c;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* BOTAO DE BUSCAR */
+.topobusca {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: #000;
+  height: 40px;
+}
+.topobusca .toponumero {
+  color: #fff;
+  font-size: 13px;
+  justify-content: center;
+  padding: 0px 30px;
+}
+.wrapper {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.input-group {
+  position: relative;
+}
+.input-group .search {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 5px;
+  position: relative;
+  transition: all 150ms cubic-bezier(0.2, 0.6, 0.252, 1.2);
+}
+.input-group .search ~ {
+  height: 4px;
+  width: 15px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  display: block;
+  opacity: 1;
+  right: -9px;
+  top: 24px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: opacity 150ms ease;
+}
+.input-group .search::-webkit-input-placeholder {
+  color: #fff;
+}
+.input-group .search:-ms-input-placeholder {
+  color: #fff;
+}
+.input-group .search::-ms-input-placeholder {
+  color: #fff;
+}
+.input-group .search::placeholder {
+  color: #fff;
+}
+.input-group .search:focus {
+  height: 25px;
+  width: 200px;
+  border-radius: 3px;
+  color: #26547c;
+  cursor: initial;
+}
+.input-group .search:focus::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+.input-group .search:focus:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+.input-group .search:focus::-ms-input-placeholder {
+  color: #a1a1a1;
+}
+.input-group .search:focus::placeholder {
+  color: #a1a1a1;
+}
+.input-group .search:focus ~ .bar {
+  box-shadow: none;
+  opacity: 0;
+  right: 0;
+  top: 5px;
+}
+/* *******************FIM BUSCA************************ */
+
+/* MENU AREA */
+.topomenu {
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+.menusessoes {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  color: #fff;
+}
+nav ul,
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+}
+nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+}
+nav .active a,
+nav a:hover {
+  background-color: #faa916;
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu-icon {
+
+	display: none;
+}
+
+a:hover#menu-icon {
+
+	background-color: #000;
+	border-radius: 4px 4px 0 0;
+
+}
+/* ***************FIM MENU AREA********************* */
+
+/* Banner area */
+.banner {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 670px;
+  margin: auto;
+}
+.bannerfoto {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-image: url("../imagens/img1.jpg");
+  height: 100%;
+  width: 100%;
+  opacity: 50;
+}
+.hdl1 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hdl1 h1 {
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0px 2px 0px #555555;
+  margin: 0px;
+  padding: 0px;
+  max-width: 550px;
+}
+.hdl1 h2 {
+  color: #fff;
+  font-size: 26px;
+  text-shadow: 0px 2px 0px #555555;
+  margin: 0px;
+  padding: 0px;
+  max-width: 550px;
+  margin-top: 10px;
+}
+
+/* Formulario banner */
+.area_formulario {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.formulario {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #1e1e1e;
+  height: 450px;
+  width: 300px;
+  font-family: "Arial", Times, serif;
+
+  border-radius: 2px;
+}
+.formulario h1 {
+  /* padding-right: 70px; */
+  font-size: 16px;
+  color: #fff;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.form-contact {
+  width: 80%;
+  font-family: "Arial", Times, serif;
+  justify-content: center;
+  margin: auto;
+}
+
+.form-contact-input {
+  width: 100%;
+  color: #292929;
+  font-size: 14px;
+  background-color: #e9e9e9;
+  border: 1px solid #e9e9e9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-contact-textarea {
+  width: 100%;
+  color: #292929;
+  font-size: 14px;
+  background-color: #e9e9e9;
+  border: 1px solid #e9e9e9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-button {
+  width: 100%;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #faa916;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #faa916;
+  border-right: 1px solid #faa916;
+  transition: 1s;
+}
+
+.form-contact-button:hover {
+  opacity: 1;
+}
+
+/* BOTAO SEARCH ORIGINAL
+https://codepen.io/lhenrique/pen/JvqGjj */
+/* QUEM SOMOS */
+.quem-somos {
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+}
+.quem-somos1 {
+  padding-top: 40px;
+  width: 100%;
+  margin: auto;
+}
+.barra {
+  width: 50px;
+  height: 3px;
+  background-color: #faa916;
+  margin-top: -10px;
+}
+.quem-somos h1 {
+  color: #fff;
+  font-size: 34px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.quem-somos h2 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.quem-somos img {
+  height: 200px;
+  margin-left: 40px;
+}
+/* *********************FIM QUEM SOMOS************************* */
+
+/* NOSSOS SERVIÇOS */
+.nossos-servicos {
+  border-top: 1px solid #2c2c2c;
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 40px;
+}
+.nossos-servicos .container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nossos-servicos .container h1 {
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+}
+.nossos-servicos .container span {
+  color: #faa916;
+  font-size: 24px;
+}
+.servicos {
+  margin-top: 30px;
+}
+article {
+  flex: 1;
+  min-width: 255px;
+  margin-right: 20px;
+}
+article .serv_thumbnail {
+  margin-top: 30px;
+}
+article .serv_thumbnail img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+}
+article .serv_title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #faa916;
+  font-size: 23px;
+  text-align: center;
+}
+article .serv_desc {
+  color: #fff;
+}
+/* ******************FIM NOSSOS SERVIÇOS***************** */
+
+/* CHAMADA */
+.chamada {
+  border-top: 1px solid #2c2c2c;
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 40px;
+}
+.chamada h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.chamada h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #faa916;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 20px;
+}
+.barra-chamada {
+  padding: 2px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: #faa916;
+  width: 650px;
+  height: auto;
+}
+.barra-chamada a {
+  color: #fff;
+  text-decoration: none !important;
+}
+.barra-chamada h3 {
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+/* **************FIM CHAMADA***************** */
+
+/* CONTATO */
+.contato {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+.contato-info {
+  color: #fff;
+}
+.contato h1 {
+  margin-left: 30px;
+}
+.contato .formulario {
+  background-color: #000;
+}
+.contato-info .serv_thumbnail {
+  margin: -20px;
+}
+.contato-info img {
+  width: 20px;
+  height: 18px;
+  margin-right: 5px;
+  max-width:420px;
+}
+.contato-info .serv_title {
+  color: #fff;
+  text-align: left;
+}
+.contato .telefone .email .localizacao {
+  margin-top: 50px;
+  padding-top: 5px;
+}
+.formulario .serv_title {
+  color: #fff;
+  text-align: left;
+  font-size: 23px;
+  margin-top: -25px;
+  margin-left: 30px;
+}
+.contato-info .contato_thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.contato-info .mediasociais img {
+  width: 26px;
+  height: auto;
+  margin-top: 10px;
+}
+.contato .telefone a {
+  text-decoration:none;
+  color:#FFF;
+}
+.contato .email a {
+  text-decoration:none;
+  color:#FFF;
+}
+/* ************FIM CONTATO************ */
+
+/* COPYRIGHT */
+.copyright {
+  background-color: #000;
+}
+.copy {
+  background-color: #000;
+  border-top: 1px solid #2c2c2c;
+  padding: 10px;
+}
+.detag h3 {
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+}
+.detag img {
+  width: 120px;
+  margin: auto;
+}
+.copy p {
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+}
+.copy span {
+  color: #faa916;
+}
+.menuMobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.mm_line {
+  height: 3px;
+  background-color: #faa916;
+}
+
+/* ************FIM COPYRIGHT************** */
+@media only screen and (max-width: 990px) {
+  .quem-somos .logo-box {
+    text-align:center;
+  }
+  .contato .formulario {
+    margin-top:35px;
+  }
+  .formulario {
+    margin:20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  
+  .topobusca {
+    display: none;
+  }
+  .menusessoes {
+    margin-top:5px;
+  }
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+  .hdl1 {
+    justify-content: start;
+    font-size: 26px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .formulario {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .quem-somos img {
+    width:50%;
+    height:auto;
+  }
+  article .serv_thumbnail img {
+    width:100%;
+    height:auto;
+    margin:auto;
+    max-height:none;
+  }
+  .barra-chamada {
+    display:none;
+  }
+  footer .area_formulario {
+    display:none;
+  }
+  footer .contato {
+    padding-bottom:20px;
+  }
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:auto;
+  }
+	nav ul, nav:active ul { 
+
+		display: block;
+		position: absolute;
+		padding: 20px;
+		background: #000;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 450px) {
+  .formulario {
+    width:80%;
+  }
+  .quem-somos h1 {
+    font-size:22px;
+  }
+  .nossos-servicos .container h1 {
+    font-size:22px;
+  }
+  .nossos-servicos .container span {
+    display:none;
+  }
+  .chamada h1 {
+    font-size:22px;
+  }
+}

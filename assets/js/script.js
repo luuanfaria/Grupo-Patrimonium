@@ -1,13 +1,25 @@
-function submit() {
+window.onload = function() {
+    document.getElementById("theform").onsubmit = function(e) {
+      e.preventDefault();
 
-    console.log("entrei no submit");
+      console.log(document.getElementById("nome").value);
+      console.log(document.getElementById("email").value);
+      console.log(document.getElementById("tel").value);
+      console.log(document.getElementById("conteudo").value);
+      return false;
+    };
+    document.getElementById("theform2").onsubmit = function(e) {
+        e.preventDefault();
+    
+  
+        console.log(document.getElementById("nome2").value);
+        console.log(document.getElementById("email2").value);
+        console.log(document.getElementById("tel2").value);
+        console.log(document.getElementById("conteudo2").value);
 
-    var nome = document.getElementById("nome").value;
-    var email = document.getElementById("email").value;
-    var telefone = document.getElementById("tel").value;
-    var conteudo = document.getElementById("conteudo").value;
+        /* document.getElementById('theform2').style.display = 'none'; */
 
-    var texto = "Nome: " +nome+ "; Telefone: "+ telefone + "; Email: "+email+ "; Conteudo: "+conteudo ;
-
-    console.log(nome);
-}
+        return false;
+    
+      };
+  };

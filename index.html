@@ -83,11 +83,8 @@
                 <div class="formulario">
                   <h1><strong>SOLICITAR ORÇAMENTO</strong></h1>
                   <form
-                    onsubmit="submit()"
-                    action="#"
                     class="form-contact"
-                    method="post"
-                    tabindex="1"
+                    id="theform"
                   >
                     <input
                       type="text"
@@ -397,14 +394,13 @@
                     <p>FALE CONOSCO</p>
                   </div>
                   <form
-                    action="#"
                     class="form-contact"
-                    method="post"
-                    tabindex="1"
+                    id="theform2"
                   >
                     <input
                       type="text"
                       class="form-contact-input"
+                      id="nome2"
                       name="nome"
                       placeholder="Nome"
                       required
@@ -412,6 +408,7 @@
                     <input
                       type="email"
                       class="form-contact-input"
+                      id="email2"
                       name="email"
                       placeholder="Email"
                       required
@@ -419,11 +416,13 @@
                     <input
                       type="tel"
                       class="form-contact-input"
+                      id="tel2"
                       name="tel"
                       placeholder="Telefone"
                     />
                     <textarea
                       class="form-contact-textarea"
+                      id="conteudo2"
                       name="conteudo"
                       placeholder="Deixe uma mensagem"
                       required

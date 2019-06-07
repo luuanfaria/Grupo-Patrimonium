@@ -444,12 +444,12 @@ article .serv_desc {
   .quem-somos .logo-box {
     text-align:center;
   }
-  .contato .formulario {
-    margin-top:35px;
+/*   .contato .formulario {
+    margin-top:35px; */
   }
-  .formulario {
+/*   .formulario {
     margin:20px;
-  }
+  } */
 }
 @media only screen and (max-width: 768px) {
   
@@ -488,7 +488,7 @@ article .serv_desc {
   .barra-chamada {
     display:none;
   }
-  footer .area_formulario {
+  .contato .formulario {
     display:none;
   }
   footer .contato {

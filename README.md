@@ -21,8 +21,6 @@ Empresa de segurança patrimonial.
 
 ### O Projeto
 
-Desenvolvido com intuito de estudos, afim de entender como é criado uma página simples.
-
 ![01 - Patrimonium!](https://github.com/luuanfaria/Grupo-Patrimonium/blob/master/patrimonium.PNG "01 - Patrimonium!")
 
 ![02 - Patrimonium!](https://github.com/luuanfaria/Grupo-Patrimonium/blob/master/patrimonium%202.PNG "02 - Patrimonium!")
